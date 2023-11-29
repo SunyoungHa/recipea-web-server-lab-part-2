@@ -4,7 +4,7 @@ const fs = require("fs").promises;
 const app = express();
 
 app.listen(3000, () => {
-  console.log("Server listening on port 3000.");
+  console.log("Server listening on http://localhost:3000");
 })
 
 app.use(express.json());
@@ -44,4 +44,15 @@ app.get("/trash-recipe/:id", async (req, res) => {
   const id = Number(req.params.id);
   await deleteRecipe(id);
   res.send("Recipe with " + id + " has been deleted.");
+});
+
+
+{/* <pre>Cannot GET /new-recipe</pre> */}
+
+app.post("/new-recipe", async (req, res) => {
+  const newRecipe = req.body;
+  const recipes = await getRecipes();
+  recipes.push(newRecipe);
+  await saveRecipes(recipes);
+  res.send("New recipe has been added.");
 });
