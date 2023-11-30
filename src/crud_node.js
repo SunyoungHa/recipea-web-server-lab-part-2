@@ -149,9 +149,18 @@ app.post("/add-recipe", async (req, res) => {
     res.status(500).json({ error: "Internal server error." });
   }
 });
+
+// Route to handle updating a recipe by id using HTTP PUT method
 app.put("/update-recipe/:id", async (req, res) => {
+  // Extracting the recipe ID from the request parameters
   const recipeId = Number(req.params.id);
+
+  // Extracting the updated recipe data from the request body
   const updatedRecipe = req.body;
+
+  // Calling the updateRecipe function to update the recipe in the data
   const result = await updateRecipe(recipeId, updatedRecipe);
+
+  // Sending the updated recipe as a JSON response with indentation for readability
   res.send(JSON.stringify(result, null, 2));
 });
