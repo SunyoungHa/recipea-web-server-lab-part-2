@@ -1,16 +1,13 @@
 [
   {
-    "name": "Spaghetti with White Sauce",
+    "name": "Updated Spaghetti Style",
     "cookingMethod": "stove-top boil",
     "ingredients": [
       "spaghetti",
-      "butter",
-      "flour",
-      "milk",
-      "salt",
-      "pepper",
+      "tomato sauce",
+      "onions",
       "garlic",
-      "parmesan cheese"
+      "red pepper flakes"
     ]
   },
   {
@@ -31,11 +28,35 @@
   {
     "name": "Fried Chicken",
     "cookingMethod": "deep fry",
-    "ingredients": ["chicken", "flour", "salt", "pepper", "garlic", "oil"]
+    "ingredients": [
+      "chicken",
+      "flour",
+      "salt",
+      "pepper",
+      "garlic",
+      "oil"
+    ]
   },
   {
     "name": "Baked Chicken",
     "cookingMethod": "oven bake",
-    "ingredients": ["chicken", "salt", "pepper", "garlic", "oil"]
+    "ingredients": [
+      "chicken",
+      "salt",
+      "pepper",
+      "garlic",
+      "oil"
+    ]
+  },
+  {
+    "name": "Spaghetti with Red Sauce - Chilean Style",
+    "cookingMethod": "stove-top boil",
+    "ingredients": [
+      "spaghetti",
+      "tomato sauce",
+      "onions",
+      "garlic",
+      "red pepper flakes"
+    ]
   }
 ]
